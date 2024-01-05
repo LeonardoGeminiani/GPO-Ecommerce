@@ -28,4 +28,8 @@ export class LessonService {
         return this.lessonList[number-1];
     }
 
+    IsNextLesson(CurrentLesson: number): boolean {
+        return this.lessonList[CurrentLesson] !== undefined;
+    }
+
 }

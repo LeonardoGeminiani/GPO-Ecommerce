@@ -11,6 +11,7 @@ import { LessonService } from 'src/app/services/lesson.service';
 export class LessonComponent {
   number: number | undefined;
   lesson: Lesson | undefined;
+  nextLesson: boolean | undefined;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,7 +25,10 @@ export class LessonComponent {
 
     if(this.number !== undefined) {
       let l = service.GetLesson(this.number);
-      if(l !== undefined) this.lesson = l;
+      if(l !== undefined) {
+        this.lesson = l;
+        this.nextLesson = service.IsNextLesson(this.number);
+      }
     }
   } 
 }
