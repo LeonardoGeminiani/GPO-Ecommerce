@@ -9,7 +9,7 @@ import { LessonService } from 'src/app/services/lesson.service';
   styleUrls: ['./lesson.component.css']
 })
 export class LessonComponent {
-  number: number = 0;
+  number: number | undefined;
   lesson: Lesson | undefined;
 
   constructor(
@@ -19,13 +19,12 @@ export class LessonComponent {
 
     this.route.queryParamMap.subscribe(params => {
       let n = params.get('n')
-      if(n === null){
-        // back to home
-        this.router.navigate(['/']);
-      }
-      else this.number = Number(n);
+      this.number = n !== null ? Number(n) : undefined;
     });
 
-    this.lesson = service.GetLesson(this.number)
-  }
+    if(this.number !== undefined) {
+      let l = service.GetLesson(this.number);
+      if(l !== undefined) this.lesson = l;
+    }
+  } 
 }
