@@ -8,7 +8,12 @@ import { LessonService } from 'src/app/services/lesson.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+
+  lessons: string[] = [];
+
   constructor(private service: LessonService) {
-    
+    for(let i of service.lessonList){
+      this.lessons.push(i.title);
+    }
   }
 }
