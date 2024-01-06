@@ -1,34 +1,39 @@
 <div class="container-xxl mt-2" *ngIf="lesson; else elseBlock">
-    <h1>{{lesson!.title}}</h1>
-    <p class="m-3">{{lesson!.subtitle}}</p>
-    <div class="d-flex justify-content-center">
-        <div>
-            <vg-player>
-                <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
-                    <source src="{{lesson!.video}}" type="video/mp4">
-                </video>
-            </vg-player>
-            <h3 style="text-align: center;" class="mt-5">Quiz</h3>
-            <div class="contiframe">
-                <iframe [src]="lesson!.googleDocIframe | safe" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
-            </div>   
-        </div>
-        <div class="m-3">
-            <h6 style="text-align: center;">Materiali lezione</h6>
-            <div class="card" style="width: 10rem; height: 30%; overflow-y: auto; ">
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item file" *ngFor="let item of lesson!.filesList">
-                        <i class="fs-4 bi bi-filetype-{{GetFileExtension(item)}}"></i>
-                        <a [href]="item" download>{{GetFileName(item)}}</a>
-                    </li>
-                </ul>
+    <div>
+        <h1>{{lesson!.title}}</h1>
+        <p class="m-3">{{lesson!.subtitle}}</p>
+        <div class="d-flex justify-content-center">
+            <div>
+                <vg-player style="border-radius: 10px;">
+                    <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                        <source src="{{lesson!.video}}" type="video/mp4">
+                    </video>
+                </vg-player>
             </div>
-            <button type="button" class="btn btn-primary mt-3" style="width: 100%;" *ngIf="nextLesson" (click)="GoToLesson((number ?? 0)+1)">
-                Prossima Lezione
-            </button>
+            <div style="margin-left: 1rem;">
+                <h6 style="text-align: center;">Materiali lezione</h6>
+                <div class="card" style="width: 10rem; max-height: 80%; overflow-y: auto; ">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item file" *ngFor="let item of lesson!.filesList">
+                            <i class="fs-4 bi bi-filetype-{{GetFileExtension(item)}}"></i>
+                            <a [href]="item" download>{{GetFileName(item)}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary mt-3" style="width: 100%;" *ngIf="nextLesson"
+                    (click)="GoToLesson((number ?? 0)+1)">
+                    Prossima Lezione
+                </button>
+            </div>
         </div>
     </div>
-    
+</div>
+<div class="bg-body-secondary">
+    <h3 style="text-align: center; padding: 10px 0px;" class="mt-5">Quiz</h3>
+    <div class="contiframe">
+        <iframe [src]="lesson!.googleDocIframe | safe" frameborder="0" marginheight="0"
+            marginwidth="0">Caricamento…</iframe>
+    </div>
 </div>
 <ng-template #elseBlock>
     <app-not-found></app-not-found>
