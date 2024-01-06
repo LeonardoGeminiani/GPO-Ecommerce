@@ -18,8 +18,40 @@ iframe {
     text-align: center;
 }
 
+.container-video-materiali{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 
+#card-materiali{
+    width: 10rem; 
+    max-height: 80%; 
+    overflow-y: auto; 
+}
+
+#container-materiali{
+    margin: 1rem;
+}
+
+#container-quiz{
+    margin-top: 50px;
+}
 @media (max-width:760px)
 {
-
+    .container-video-materiali{
+        flex-wrap: wrap;
+    }
+    #container-materiali{
+        width: 100%;
+        margin: 2rem 0rem;
+    }
+    #container-quiz{
+        margin-top: 10px;
+    }
+    #card-materiali{
+        width: 100%; 
+        max-height: 80%; 
+        overflow-y: auto; 
+    }
 }
