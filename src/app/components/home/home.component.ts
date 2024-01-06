@@ -12,5 +12,8 @@ export class HomeComponent {
     
   }
 
+  GoToLesson(number: number): void {
+    this.service.GoToLesson(this.router, number);
+  }
   
 }

@@ -44,10 +44,12 @@ export class LessonService {
     }
 
     GoToLesson(router: Router, number: number): void {
-        router.navigate(['lesson'], {
-            queryParams: {
-                n : number,
-        }});
+        router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+            router.navigate(['lesson'],{
+                queryParams: {
+                    n : number,
+                }
+            });
+        });
     }
-
 }

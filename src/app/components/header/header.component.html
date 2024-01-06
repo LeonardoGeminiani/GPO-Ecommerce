@@ -15,7 +15,7 @@
           </a>
           <ul class="dropdown-menu">
             <ng-template ngFor let-item [ngForOf]="lessons" let-i="index" >
-              <li><a class="dropdown-item" href="lesson?n={{i+1}}">{{lessons[i]}}</a></li>
+              <li><a class="dropdown-item" (click)="GoToLesson(i+1)">{{lessons[i]}}</a></li>
               <li *ngIf="i !== lessons.length-1" ><hr class="dropdown-divider"></li>
             </ng-template>
           </ul>
