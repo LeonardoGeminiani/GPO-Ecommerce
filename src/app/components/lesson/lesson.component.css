@@ -8,6 +8,12 @@ vg-player {
     align-items: center;
 }
 
+#link-file{
+    text-decoration: none;
+}
+#link-file:hover{
+    text-decoration: underline;
+}
 
 iframe {
     width: 100%;
