@@ -2,7 +2,7 @@
     <div>
         <h1>{{lesson!.title}}</h1>
         <p class="m-3">{{lesson!.subtitle}}</p>
-        <div class="d-flex justify-content-center">
+        <div class="container-video-materiali">
             <div>
                 <vg-player style="border-radius: 10px;">
                     <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
