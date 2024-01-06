@@ -19,7 +19,7 @@ export class LessonService {
                 'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
                 [
                     "../../assets/Break-even Point.pdf",
-                    "../../assets/Riccardo Giovagnoli - BEP 2 - Foglio1.pdf"
+                    "../../assets/Esercizio BEP2.xlsx"
                 ]
             )
         ];
