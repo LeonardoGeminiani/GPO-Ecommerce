@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Lesson } from 'src/app/models/lesson';
 import { LessonService } from 'src/app/services/lesson.service';
@@ -16,7 +17,8 @@ export class LessonComponent {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private service: LessonService) {
+    private service: LessonService,
+    private sanitizer: DomSanitizer) {
 
     this.route.queryParamMap.subscribe(params => {
       let n = params.get('n')
@@ -30,5 +32,21 @@ export class LessonComponent {
         this.nextLesson = service.IsNextLesson(this.number);
       }
     }
-  } 
+
+    console.log(this.lesson!.googleDocIframe);
+  }
+
+  GoToLesson(number: number): void {
+    this.service.GoToLesson(this.router, number);
+  }
+
+  GetFileExtension(el: string): string {
+    let arr = el.split('.');
+    return arr[arr.length - 1];
+  }
+
+  GetFileName (el: string): string{
+    let arr = el.split('/');
+    return arr[arr.length - 1];
+  }
 }

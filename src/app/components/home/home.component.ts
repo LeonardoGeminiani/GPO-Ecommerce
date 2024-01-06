@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { LessonService } from 'src/app/services/lesson.service';
 
 @Component({
@@ -7,7 +8,9 @@ import { LessonService } from 'src/app/services/lesson.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  constructor(private service: LessonService) {
+  constructor(private service: LessonService, private router: Router) {
     
   }
+
+  
 }

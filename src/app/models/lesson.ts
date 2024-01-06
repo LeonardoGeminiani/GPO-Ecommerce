@@ -4,6 +4,7 @@ export class Lesson
         public video: string,
         public title: string,
         public subtitle: string,
-        public filesList?: string[] 
+        public googleDocIframe: string,
+        public filesList?: string[]
     ){}
 }

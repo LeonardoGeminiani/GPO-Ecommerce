@@ -13,6 +13,7 @@ import {VgControlsModule} from '@videogular/ngx-videogular/controls';
 import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import { LessonComponent } from './components/lesson/lesson.component';
+import { SafePipe } from './pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LessonComponent } from './components/lesson/lesson.component';
     HomeComponent,
     HeaderComponent,
     NotFoundComponent,
-    LessonComponent
+    LessonComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,

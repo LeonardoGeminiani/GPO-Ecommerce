@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Lesson } from '../models/lesson';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -12,14 +13,14 @@ export class LessonService {
     constructor() {
         this.lessonList = [
             new Lesson(
-                "../../../assets/test.mp4",
-                "Domanda e offerta",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus a ante eu interdum. Vivamus erat dui, ultricies non dictum eget, dapibus vel velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque lorem eros, faucibus ut euismod id"
-            ),
-            new Lesson(
-                "../../../assets/test.mp4",
-                "Domanda e 1",
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus a ante eu interdum. Vivamus erat dui, ultricies non dictum eget, dapibus vel velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque lorem eros, faucibus ut euismod id"
+                "../../assets/Break-even point.mp4",
+                "Costi e Break-even Point",
+                "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
+                'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
+                [
+                    "../../assets/Break-even Point.pdf",
+                    "../../assets/Riccardo Giovagnoli - BEP 2 - Foglio1.pdf"
+                ]
             )
         ];
     }
@@ -30,6 +31,13 @@ export class LessonService {
 
     IsNextLesson(CurrentLesson: number): boolean {
         return this.lessonList[CurrentLesson] !== undefined;
+    }
+
+    GoToLesson(router: Router, number: number): void {
+        router.navigate(['lesson'], {
+            queryParams: {
+                n : number,
+        }});
     }
 
 }

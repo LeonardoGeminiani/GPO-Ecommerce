@@ -1,0 +1,15 @@
+vg-player {
+    width: 100%;
+    height: auto;
+}
+
+.file {
+    display: flex;
+    align-items: center;
+}
+
+
+iframe {
+    width: 100%;
+    height: 30em
+}

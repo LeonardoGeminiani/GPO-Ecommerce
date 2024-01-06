@@ -8,19 +8,27 @@
                 </video>
             </vg-player>
             <p class="m-3">{{lesson!.subtitle}}</p>
+            <h3>Quiz</h3>
+            <div>
+                <iframe [src]="lesson!.googleDocIframe | safe" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe>
+            </div>   
         </div>
         <div class="m-3">
-            <div class="card" style="width: 10rem; height: 70%; overflow-y: auto; ">
+            <h6 style="text-align: center;">Materiali lezione</h6>
+            <div class="card" style="width: 10rem; height: 30%; overflow-y: auto; ">
                 <ul class="list-group list-group-flush">
-                  <li class="list-group-item">An item</li>
-                  <li class="list-group-item">A second item</li>
+                    <li class="list-group-item file" *ngFor="let item of lesson!.filesList">
+                        <i class="fs-4 bi bi-filetype-{{GetFileExtension(item)}}"></i>
+                        <a [href]="item" download>{{GetFileName(item)}}</a>
+                    </li>
                 </ul>
             </div>
-            <a type="button" class="btn btn-primary mt-3" style="width: 100%;" *ngIf="nextLesson" href="/lesson?n={{(number ?? 0)+1}}">
+            <button type="button" class="btn btn-primary mt-3" style="width: 100%;" *ngIf="nextLesson" (click)="GoToLesson((number ?? 0)+1)">
                 Prossima Lezione
-            </a>
+            </button>
         </div>
     </div>
+    
 </div>
 <ng-template #elseBlock>
     <app-not-found></app-not-found>
