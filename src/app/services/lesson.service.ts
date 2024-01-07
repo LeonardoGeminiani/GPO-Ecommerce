@@ -13,6 +13,20 @@ export class LessonService {
     constructor() {
         this.lessonList = [
             new Lesson(
+                "../../assets/DomandaEOfferta.mp4",
+                "Domanda E Offerta",
+                "Video lezione sul modello di mercato domanda e offerta con dimostrazione su foglio excel, a fine lezione trovate un test per verificare le competenze apprese.",
+                {
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLSfb_DYtLo32vNKZqZAvjA6Vr0v1HqBWhdOUdZDb6KM13Soy1w/viewform?embedded=true',
+                    height: 2900
+                },
+                [
+                    "../../assets/Domanda E Offerta.pdf",
+                    "../../assets/Domanda E Offerta schema.pdf",
+                    "../../assets/Bianchi 5F domanda e offerta.xlsx"
+                ]
+            ),
+            new Lesson(
                 "../../assets/CostiRicProfit.mp4",
                 "Costi, ricavi e profitti",
                 "Lezione sui costi, ricavi e profitti. Attraverso un esercizio verrà spiegato come ricavare i profitti da alcuni esempi di costi e ricavi, e ad individuarne il profitto massimo con funzioni excel.",
