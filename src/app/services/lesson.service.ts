@@ -27,6 +27,19 @@ export class LessonService {
                 ]
             ),
             new Lesson(
+                "../../assets/video-iCosti.mp4",
+                "I Costi",
+                "La lezione affronta le dinamiche aziendali relative a costi e ricavi, esplorando tre indicatori chiave di efficienza. Introduce concetti fondamentali come ricavi (R), costi (C) e profitto (P). Illustra le differenze tra costi fissi (CF), variabili (CV) e semivariabili, e discute il metodo aziendale per determinare i costi dei prodotti.",
+                {
+                    url: '',
+                    height: 2900
+                },
+                [
+                    "../../assets/I costi.pdf",
+                    "../../assets/Script Lavoro i Costi.pdf"
+                ]
+            ),
+            new Lesson(
                 "../../assets/CostiRicProfit.mp4",
                 "Costi, ricavi e profitti",
                 "Lezione sui costi, ricavi e profitti. Attraverso un esercizio verrà spiegato come ricavare i profitti da alcuni esempi di costi e ricavi, e ad individuarne il profitto massimo con funzioni excel.",
