@@ -15,7 +15,7 @@
                 <div class="card" id="card-materiali">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item file" *ngFor="let item of lesson!.filesList">
-                            <i class="fs-4 bi bi-filetype-{{GetFileExtension(item)}}"></i>
+                            <i class="fs-2 bi bi-filetype-{{GetFileExtension(item)}}"></i>
                             <a id="link-file" [href]="item" download>{{GetFileName(item)}}</a>
                         </li>
                     </ul>
@@ -31,8 +31,7 @@
 <div class="bg-body-secondary" id="container-quiz">
     <h2 style="text-align: center; padding: 10px 0px;">Quiz</h2>
     <div class="contiframe">
-        <iframe [src]="lesson!.googleDocIframe | safe" frameborder="0" marginheight="0"
-            marginwidth="0">Caricamento…</iframe>
+        <iframe [src]="lesson!.googleDocIframe.url | safe" frameborder="0" marginheight="0" marginwidth="0" id="quizIframe" height="{{lesson!.googleDocIframe.height}}">Caricamento…</iframe>
     </div>
 </div>
 <ng-template #elseBlock>

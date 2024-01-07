@@ -16,7 +16,10 @@ export class LessonService {
                 "../../assets/Video-BEP.mp4",
                 "Costi e Break-even Point",
                 "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
-                'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
+                {
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
+                    height: 3200
+                },
                 [
                     "../../assets/Break-even Point.pdf",
                     "../../assets/Esercizio BEP2.xlsx"
@@ -26,7 +29,10 @@ export class LessonService {
                 "../../assets/Video-BEP.mp4",
                 "Costi e Break-even Point",
                 "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
-                'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
+                {
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
+                    height: 3200
+                },
                 [
                     "../../assets/Break-even Point.pdf",
                     "../../assets/Esercizio BEP2.xlsx"

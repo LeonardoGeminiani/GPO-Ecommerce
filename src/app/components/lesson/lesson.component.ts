@@ -9,7 +9,7 @@ import { LessonService } from 'src/app/services/lesson.service';
   templateUrl: './lesson.component.html',
   styleUrls: ['./lesson.component.css']
 })
-export class LessonComponent {
+export class LessonComponent  {
   number: number | undefined;
   lesson: Lesson | undefined;
   nextLesson: boolean | undefined;
@@ -32,8 +32,6 @@ export class LessonComponent {
         this.nextLesson = service.IsNextLesson(this.number);
       }
     }
-
-    console.log(this.lesson!.googleDocIframe);
   }
 
   GoToLesson(number: number): void {
@@ -49,4 +47,5 @@ export class LessonComponent {
     let arr = el.split('/');
     return arr[arr.length - 1];
   }
+
 }
