@@ -13,16 +13,15 @@ export class LessonService {
     constructor() {
         this.lessonList = [
             new Lesson(
-                "../../assets/Video-BEP.mp4",
-                "Costi e Break-even Point",
-                "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
+                "../../assets/CostiRicProfit.mp4",
+                "Costi, ricavi e profitti",
+                "Lezione sui costi, ricavi e profitti. Attraverso un esercizio verrà spiegato come ricavare i profitti da alcuni esempi di costi e ricavi, e ad individuarne il profitto massimo con funzioni excel.",
                 {
-                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScR2l9JcgSJ9Ab2TPTMAelaXTIbocvdtWzN9muZWGg02odoBQ/viewform?embedded=true',
-                    height: 3200
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLSepEFkkzZCeLiPckhduuSRWdubIfufiCDXBz7OFG9JsnFA_qw/viewform?embedded=true',
+                    height: 1300
                 },
                 [
-                    "../../assets/Break-even Point.pdf",
-                    "../../assets/Esercizio BEP2.xlsx"
+                    "../../assets/Costi ricavi profitti.pdf"
                 ]
             ),
             new Lesson(
