@@ -59,7 +59,7 @@ export class LessonService {
             new Lesson(
                 "Giovagnoli Riccardo",
                 "../../assets/VideoBEP.mp4",
-                "",
+                "../../assets/Intelligenza artificiale Break-even point.mp4",
                 "Costi e Break-even Point",
                 "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
                 {
