@@ -1,6 +1,6 @@
 <div class="container-xxl mt-2" *ngIf="lesson; else elseBlock">
     <div>
-        <h1>{{lesson!.title}}</h1>
+        <h1>{{lesson!.title}} <span class="fs-5 m-3 text-secondary" style="font-weight: bold;">({{lesson!.author}})</span></h1>
         <p class="m-3">{{lesson!.subtitle}}</p>
         <div class="container-video-materiali">
             <div>
@@ -27,6 +27,14 @@
             </div>
         </div>
     </div>
+    <div class="m-3">
+        Video sulla mia esperienza nell'utilizzo dell'intelligenza artificiale per sviluppare questa lezione:
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Apri il video
+        </button>
+    </div>
 </div>
 <div class="bg-body-secondary" id="container-quiz">
     <h2 style="text-align: center; padding: 10px 0px;">Quiz</h2>
@@ -37,3 +45,24 @@
 <ng-template #elseBlock>
     <app-not-found></app-not-found>
 </ng-template>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+    <div class="modal-content">
+    <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Video sull' AI</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        <vg-player style="border-radius: 10px;">
+            <video [vgMedia]="$any(media)" #media id="singleVideo" preload="auto" controls>
+                <source src="{{lesson!.aiVideo}}" type="video/mp4">
+            </video>
+        </vg-player>
+    </div>
+    </div>
+</div>
+</div>

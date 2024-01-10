@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
 export class LessonService {
     lessonList: Lesson[];
 
-    private CurrentLesson: number = 0;
-
     constructor() {
         this.lessonList = [
             new Lesson(
+                "Bianchi Bryan Nicolas",
                 "../../assets/DomandaEOfferta.mp4",
+                "../../assets/Intelligenza artificiale Domanda e Offerta.mp4",
                 "Domanda E Offerta",
                 "Video lezione sul modello di mercato domanda e offerta con dimostrazione su foglio excel, a fine lezione trovate un test per verificare le competenze apprese.",
                 {
@@ -23,16 +23,19 @@ export class LessonService {
                 [
                     "../../assets/Domanda E Offerta.pdf",
                     "../../assets/Domanda E Offerta schema.pdf",
-                    "../../assets/Bianchi 5F domanda e offerta.xlsx"
+                    "../../assets/Bianchi 5F domanda e offerta.xlsx",
+                    "../../assets/Intelligenza artificiale Domanda e Offerta.pdf"
                 ]
             ),
             new Lesson(
+                "Geminiani Leonardo",
                 "../../assets/video-iCosti.mp4",
+                "",
                 "I Costi",
                 "La lezione affronta le dinamiche aziendali relative a costi e ricavi, esplorando tre indicatori chiave di efficienza. Introduce concetti fondamentali come ricavi (R), costi (C) e profitto (P). Illustra le differenze tra costi fissi (CF), variabili (CV) e semivariabili, e discute il metodo aziendale per determinare i costi dei prodotti.",
                 {
-                    url: '',
-                    height: 2900
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLSe6eqryRyXlZNPqPTtiQsKb3ISwCqC-mJgoeGb1rtWj24YUag/viewform?embedded=true',
+                    height: 3000
                 },
                 [
                     "../../assets/I costi.pdf",
@@ -40,7 +43,9 @@ export class LessonService {
                 ]
             ),
             new Lesson(
+                "Cosmi Filippo",
                 "../../assets/CostiRicProfit.mp4",
+                "",
                 "Costi, ricavi e profitti",
                 "Lezione sui costi, ricavi e profitti. Attraverso un esercizio verrà spiegato come ricavare i profitti da alcuni esempi di costi e ricavi, e ad individuarne il profitto massimo con funzioni excel.",
                 {
@@ -52,7 +57,9 @@ export class LessonService {
                 ]
             ),
             new Lesson(
+                "Giovagnoli Riccardo",
                 "../../assets/VideoBEP.mp4",
+                "",
                 "Costi e Break-even Point",
                 "Lezione sui costi e sul Break-even Point. Imparerai la differenza tra costi variabili e costi fissi, i significati di ricavi, profitto e come si calcola il Break-Even Point.",
                 {

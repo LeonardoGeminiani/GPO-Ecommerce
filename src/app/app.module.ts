@@ -14,6 +14,7 @@ import {VgOverlayPlayModule} from '@videogular/ngx-videogular/overlay-play';
 import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import { LessonComponent } from './components/lesson/lesson.component';
 import { SafePipe } from './pipes/safe.pipe';
+import { AiPageComponent } from './components/ai-page/ai-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SafePipe } from './pipes/safe.pipe';
     HeaderComponent,
     NotFoundComponent,
     LessonComponent,
-    SafePipe
+    SafePipe,
+    AiPageComponent
   ],
   imports: [
     BrowserModule,
