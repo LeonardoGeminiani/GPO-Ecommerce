@@ -33,3 +33,19 @@ iframe {
     height: 100%;
     margin: 0;
 }
+
+@media (max-width:900px)
+{
+    .maps-cnt {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
