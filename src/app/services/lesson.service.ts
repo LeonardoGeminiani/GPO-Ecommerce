@@ -57,6 +57,20 @@ export class LessonService {
                 ]
             ),
             new Lesson(
+                "Alessi Tosi Diego Mario",
+                "../../assets/AziendaEattVideo.mp4",
+                "",
+                "L'Azienda e le sue attività",
+                "Una breve lezione dove capiremo come vengono strutturate le aziende, spiegheremo la differenza tra aziende a scopo di lucro e non, i bisogni, le fasi principali dell'attività economica e la classificazione di un'azienda.",
+                {
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScdmDfJCmOq4IuM_BnqSIa2Cjn003XEHznnizMtxfC2cZiTmw/viewform?usp=pp_url',
+                    height: 2700
+                },
+                [
+                    "../../assets/l'azienda e le sue attività.pdf"
+                ]
+            ),
+            new Lesson(
                 "Giovagnoli Riccardo",
                 "../../assets/VideoBEP.mp4",
                 "../../assets/Intelligenza artificiale Break-even point.mp4",
