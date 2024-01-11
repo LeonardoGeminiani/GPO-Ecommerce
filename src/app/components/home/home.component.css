@@ -15,7 +15,7 @@ iframe {
 }
 
 #mainWrap {
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: -998;
     background-color: rgba(255, 255, 255, 0.9);
@@ -26,7 +26,7 @@ iframe {
 #main {
     background-image: url(src/assets/SfondoHome.jpg);
     background-size:cover;
-    position: absolute;
+    position: fixed;
     top: 0px;
     z-index: -999;
     width: 100%;
