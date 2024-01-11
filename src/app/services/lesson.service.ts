@@ -63,7 +63,7 @@ export class LessonService {
                 "L'Azienda e le sue attività",
                 "Una breve lezione dove capiremo come vengono strutturate le aziende, spiegheremo la differenza tra aziende a scopo di lucro e non, i bisogni, le fasi principali dell'attività economica e la classificazione di un'azienda.",
                 {
-                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScdmDfJCmOq4IuM_BnqSIa2Cjn003XEHznnizMtxfC2cZiTmw/viewform?usp=pp_url',
+                    url: 'https://docs.google.com/forms/d/e/1FAIpQLScdmDfJCmOq4IuM_BnqSIa2Cjn003XEHznnizMtxfC2cZiTmw/viewform?embedded=true',
                     height: 2700
                 },
                 [
