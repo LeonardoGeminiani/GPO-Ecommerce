@@ -30,7 +30,7 @@ export class LessonService {
             new Lesson(
                 "Geminiani Leonardo",
                 "../../assets/video-iCosti.mp4",
-                "",
+                "../../assets/ICostiVideoAi.mp4",
                 "I Costi",
                 "La lezione affronta le dinamiche aziendali relative a costi e ricavi, esplorando tre indicatori chiave di efficienza. Introduce concetti fondamentali come ricavi (R), costi (C) e profitto (P). Illustra le differenze tra costi fissi (CF), variabili (CV) e semivariabili, e discute il metodo aziendale per determinare i costi dei prodotti.",
                 {
