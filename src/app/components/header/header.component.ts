@@ -21,4 +21,17 @@ export class HeaderComponent {
   GoToLesson(number: number): void {
     this.service.GoToLesson(this.router, number);
   }
+
+  ChangeTheme():void {
+    let el = document.getElementById("theme")!;
+
+    switch(el.getAttribute("data-bs-theme")!){
+      case "light":
+        el.setAttribute("data-bs-theme", "dark");
+        break;
+      case "dark":
+        el.setAttribute("data-bs-theme", "light");
+        break;
+    }
+  }
 }

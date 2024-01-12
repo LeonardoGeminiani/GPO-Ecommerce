@@ -16,7 +16,8 @@ vg-player {
 }
 
 iframe {
-    width: 100%;
+    width: 640px;
+    border-radius: 10px;
 }
 
 .contiframe{

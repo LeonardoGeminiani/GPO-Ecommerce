@@ -2,3 +2,19 @@ html, body {
     margin: 0;
     height: 100%;
 }
+
+div[data-bs-theme = "dark"] #mainWrap {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+div[data-bs-theme = "light"] #mainWrap {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+div[data-bs-theme = "dark"] * {
+    color: white;
+}
+
+body:has(div[data-bs-theme = "dark"]) {
+    background-color: var(--bs-dark);
+}
