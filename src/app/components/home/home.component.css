@@ -1,4 +1,4 @@
-#content{
+#content {
     text-align: left;
     margin: 50px 200px 0px 0px;
 
@@ -14,12 +14,12 @@ iframe {
     min-height: 20rem;
 }
 
-.faces > div {
+.faces>div {
     margin: 10px;
     border: none;
 }
 
-.faces > div .card-body {
+.faces>div .card-body {
     text-align: center;
 }
 
@@ -27,21 +27,20 @@ iframe {
     margin-bottom: 5rem;
 }
 
-@media (max-width:900px)
-{
+@media (max-width:900px) {
 
     .faces {
         flex-wrap: wrap;
     }
 
-    .faces > div {
+    .faces>div {
         margin: auto;
         margin-bottom: 10px;
         width: 47% !important;
         /* height: 17rem; */
     }
 
-    .faces > div .card-body {
+    .faces>div .card-body {
         height: 5rem;
     }
 
