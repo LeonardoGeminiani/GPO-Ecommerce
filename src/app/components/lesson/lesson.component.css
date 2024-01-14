@@ -45,6 +45,10 @@ iframe {
 }
 @media (max-width:760px)
 {
+    iframe {
+        width: auto;
+    }
+    
     .container-video-materiali{
         flex-wrap: wrap;
     }
