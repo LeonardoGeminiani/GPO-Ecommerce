@@ -45,7 +45,7 @@ export class LessonService {
             new Lesson(
                 "Cosmi Filippo",
                 "../../assets/CostiRicProfit.mp4",
-                "",
+                "../../assets/IACostiRicaviProfitti.mp4",
                 "Costi, ricavi e profitti",
                 "Lezione sui costi, ricavi e profitti. Attraverso un esercizio verrà spiegato come ricavare i profitti da alcuni esempi di costi e ricavi, e ad individuarne il profitto massimo con funzioni excel.",
                 {
@@ -53,7 +53,8 @@ export class LessonService {
                     height: 1300
                 },
                 [
-                    "../../assets/Costi ricavi profitti.pdf"
+                    "../../assets/Costi ricavi profitti.pdf",
+                    "../../assets/IACostiRic Profitti.pdf"
                 ]
             ),
             new Lesson(

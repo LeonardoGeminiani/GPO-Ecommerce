@@ -17,4 +17,5 @@ div[data-bs-theme = "dark"] * {
 
 body:has(div[data-bs-theme = "dark"]) {
     background-color: var(--bs-dark);
+    /* background-color: rgb(4, 4, 4); */
 }
