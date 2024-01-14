@@ -14,24 +14,6 @@ iframe {
     min-height: 20rem;
 }
 
-#mainWrap {
-    position: fixed;
-    top: 0px;
-    z-index: -9;
-    width: 100%;
-    height: 100%;
-}
-
-#main {
-    background-image: url(src/assets/SfondoHome.jpg);
-    background-size:cover;
-    position: fixed;
-    top: 0px;
-    z-index: -10;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
 
 @media (max-width:900px)
 {

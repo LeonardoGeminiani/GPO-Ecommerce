@@ -4,7 +4,7 @@ html, body {
 }
 
 div[data-bs-theme = "dark"] #mainWrap {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(10, 10, 10, 0.9);
 }
 
 div[data-bs-theme = "light"] #mainWrap {
@@ -18,4 +18,23 @@ div[data-bs-theme = "dark"] * {
 body:has(div[data-bs-theme = "dark"]) {
     background-color: var(--bs-dark);
     /* background-color: rgb(4, 4, 4); */
+}
+
+#mainWrap {
+    position: fixed;
+    top: 0px;
+    z-index: -9;
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    background-image: url(src/assets/SfondoHome.jpg);
+    background-size:cover;
+    position: fixed;
+    top: 0px;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    margin: 0;
 }
