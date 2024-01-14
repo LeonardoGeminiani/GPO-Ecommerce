@@ -18,8 +18,14 @@
           </ul>
         </li>
       </ul>
-    </div>
+      
+      <div class="nav-link">
 
-    <input type="checkbox" id="themeSwitch" name="theme-switch" class="theme-switch__input" (click)="ChangeTheme()"/>
+        <div class="form-check form-switch">
+          <input type="checkbox" class="form-check-input" id="darkSwitch" (click)="ChangeTheme()">
+          <label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+        </div>
+      </div>
+    </div>
   </div>
 </nav>
