@@ -15,6 +15,9 @@ import {VgBufferingModule} from '@videogular/ngx-videogular/buffering';
 import { LessonComponent } from './components/lesson/lesson.component';
 import { SafePipe } from './pipes/safe.pipe';
 
+import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +36,9 @@ import { SafePipe } from './pipes/safe.pipe';
     VgOverlayPlayModule,
     VgBufferingModule
   ],
-  providers: [],
+  providers: [
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
