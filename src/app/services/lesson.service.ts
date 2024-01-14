@@ -60,7 +60,7 @@ export class LessonService {
             new Lesson(
                 "Alessi Tosi Diego Mario",
                 "../../assets/AziendaEattVideo.mp4",
-                "",
+                "../../assets/aiuto intelligienza artificale per ricerca.mp4",
                 "L'Azienda e le sue attività",
                 "Una breve lezione dove capiremo come vengono strutturate le aziende, spiegheremo la differenza tra aziende a scopo di lucro e non, i bisogni, le fasi principali dell'attività economica e la classificazione di un'azienda.",
                 {
