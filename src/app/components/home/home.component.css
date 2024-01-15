@@ -17,6 +17,12 @@ iframe {
 .faces>div {
     margin: 10px;
     border: none;
+    transition: ease .3s;
+}
+
+
+.faces>div:hover {
+    scale: 1.05;
 }
 
 .faces>div .card-body {

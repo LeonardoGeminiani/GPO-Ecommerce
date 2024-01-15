@@ -20,6 +20,11 @@ body:has(div[data-bs-theme = "dark"]) {
     /* background-color: rgb(4, 4, 4); */
 }
 
+div[data-bs-theme = "dark"] .map {
+    filter: invert(90%) hue-rotate(180deg);
+    box-shadow: none;
+}
+
 #mainWrap {
     position: fixed;
     top: 0px;
